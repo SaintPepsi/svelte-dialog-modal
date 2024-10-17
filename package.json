@@ -16,10 +16,6 @@
         ".": {
             "types": "./dist/index.d.ts",
             "svelte": "./dist/index.js"
-        },
-        "./DialogModal.svelte": {
-            "types": "./dist/DialogModal.svelte.d.ts",
-            "svelte": "./dist/DialogModal.svelte"
         }
     },
     "files": [
