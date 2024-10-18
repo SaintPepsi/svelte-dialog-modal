@@ -146,6 +146,18 @@
 </dialog>
 
 <style lang="scss">
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+		}
+	}
+
+	@keyframes fade-out {
+		to {
+			opacity: 0;
+		}
+	}
+
 	dialog {
 		--DialogModalBackdropColour: rgba(0, 0, 0, 0.2);
 		background: transparent;
