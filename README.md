@@ -2,6 +2,8 @@
 
 An unstyled HTMLDialog Element wrapper for easy use in Svelte/SvelteKit, supporting stacking contexts and more.
 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/sveltejs-kit-template-default-qngg7x?file=src%2Froutes%2F%2Bpage.svelte)
+
 ## Features
 
 - Simple integration with Svelte/SvelteKit
