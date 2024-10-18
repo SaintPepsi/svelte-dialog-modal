@@ -20,7 +20,7 @@ bun add svelte-dialog-modal
 
 ## Usage
 
-```svelte
+```html
 <script lang="ts">
 	import DialogModal from 'svelte-dialog-modal';
 	let isOpen = $state(false);
@@ -43,6 +43,11 @@ bun add svelte-dialog-modal
 - `preventCloseOnOutsideClick` (`boolean`) - Optional. If true, clicking outside the modal will not close it.
 - `type` (`'default' | 'popup'`) - Optional. Specifies the type of the modal. Can be 'default' or 'popup'.
 - `'data-testid'` (`string`) - Optional. A test identifier for the modal.
+
+## CSS Variables
+
+- `--DialogModalBackdropColour` - Colour of the `::backdrop` psuedo-element
+- `--padding` - Padding unit for the default popup
 
 ## License
 

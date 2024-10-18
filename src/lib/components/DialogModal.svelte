@@ -204,9 +204,9 @@
 				.Modal {
 					&__contentWrapper {
 						padding-top: calc(env(safe-area-inset-top) + calc(var(--padding) * 4));
-						padding-bottom: calc(
-							env(safe-area-inset-bottom) + calc(calc(var(--padding) * 4) + 19px)
-						);
+						padding-bottom: calc(env(safe-area-inset-bottom) + calc(calc(var(--padding) * 4)));
+						padding-left: calc(env(safe-area-inset-left) + calc(var(--padding) * 4));
+						padding-right: calc(env(safe-area-inset-right) + calc(calc(var(--padding) * 4)));
 					}
 				}
 			}
