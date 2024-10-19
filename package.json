@@ -23,6 +23,13 @@
 		"!dist/**/*.test.*",
 		"!dist/**/*.spec.*"
 	],
+	"homepage": "https://github.com/SaintPepsi/svelte-dialog-modal#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SaintPepsi/svelte-dialog-modal.git"
+	},
+	"bugs": "https://github.com/SaintPepsi/svelte-dialog-modal/issues",
+	"author": "Ian Hogers <info@iahogers.com>",
 	"peerDependencies": {
 		"svelte": "^5.0.0-next.1"
 	},
