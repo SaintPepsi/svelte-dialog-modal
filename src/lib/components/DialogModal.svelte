@@ -43,8 +43,8 @@
 	let classes = $derived(
 		classNames('Modal', `Modal--isOpen-${isOpen}`, `Modal--type-${type}`, {
 			'Modal--fullWidth': fullWidth,
-			'Modal--noBackdrop': noBackdrop
-		})
+			'Modal--noBackdrop': noBackdrop,
+		}),
 	);
 
 	let contentClasses = $derived(classNames('Modal__content'));
@@ -60,7 +60,7 @@
 	function finaliseClose(
 		e: CustomEvent<null> & {
 			currentTarget: EventTarget & HTMLDivElement;
-		}
+		},
 	) {
 		if (dialog && !isOpen) dialog.close();
 	}
@@ -79,7 +79,7 @@
 	}
 
 	setContext<DialogModalNamespace.Context>('Modal', {
-		isOpen: { value: isOpen, set: updateisOpen }
+		isOpen: { value: isOpen, set: updateisOpen },
 	});
 </script>
 
@@ -99,14 +99,14 @@
 						duration: duration,
 						y: '100%',
 						opacity: 0.2,
-						easing: cubicOut
+						easing: cubicOut,
 					}}
 					out:fly|global={{
 						delay: 0,
 						duration: duration,
 						y: '100%',
 						opacity: 0.2,
-						easing: cubicIn
+						easing: cubicIn,
 					}}
 					onoutroendcapture={(e) => {
 						finaliseClose(e);
@@ -123,14 +123,14 @@
 							duration: duration,
 							start: 0.8,
 							opacity: 0.2,
-							easing: backOut
+							easing: backOut,
 						}}
 						out:scale|global={{
 							delay: 0,
 							duration: duration,
 							start: 0.8,
 							opacity: 0.2,
-							easing: backIn
+							easing: backIn,
 						}}
 						onoutroendcapture={(e) => {
 							finaliseClose(e);
@@ -204,9 +204,13 @@
 				.Modal {
 					&__contentWrapper {
 						padding-top: calc(env(safe-area-inset-top) + calc(var(--padding) * 4));
-						padding-bottom: calc(env(safe-area-inset-bottom) + calc(calc(var(--padding) * 4)));
+						padding-bottom: calc(
+							env(safe-area-inset-bottom) + calc(calc(var(--padding) * 4))
+						);
 						padding-left: calc(env(safe-area-inset-left) + calc(var(--padding) * 4));
-						padding-right: calc(env(safe-area-inset-right) + calc(calc(var(--padding) * 4)));
+						padding-right: calc(
+							env(safe-area-inset-right) + calc(calc(var(--padding) * 4))
+						);
 					}
 				}
 			}
